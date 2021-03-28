@@ -23,3 +23,7 @@ li{
 li:hover{
     background-color: #814CAD;
 }
+/* Pseudo elementos -----> Para definir una parte especifica*/
+li::after{
+    content: "--";
+}

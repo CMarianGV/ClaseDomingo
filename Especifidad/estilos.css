@@ -1,0 +1,23 @@
+
+/* Selector descendente */
+/* div.contenedor p{
+    color: turquoise;
+}*/
+
+/* SELECTOR DE HIJO DIRECTO */
+/* div.contenedor > p{
+    color: violet;
+} */
+
+/* SELECTOR ADYACENTE a la etiqueta que esta al lado */
+/* div.parrafos p + p{
+    color: yellow;
+}
+div.parrafos > p {
+    color: red;
+} */
+
+/*SELECTOR PRESEDENTE, DEBEN COMPARTIR EL MISMO PADRE*/
+p ~ div{
+    font-size: 40px;
+}
