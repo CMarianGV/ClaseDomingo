@@ -1,0 +1,162 @@
+p.cuadrado{
+    width: 100px;
+    height: 100px;
+    background-color: rosybrown;
+}
+p.circulo{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    border-radius: 50%;
+}
+p.rombo{
+    width: 100px;
+    height: 100px;
+    background-color: plum;
+    transform: rotate(45deg);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+p.triangulo{
+    width: 0px;
+    height: 0px;
+    border-top: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid blueviolet;
+    border-left: 50px solid transparent;
+}
+section.corazon_container{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    border: 1px solid pink;
+}
+p.derecha{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+p.izquierda{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 270px;
+}
+p.pico{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 135px;
+    left: 235px;
+}
+section.corazon_container:hover > p.derecha {
+    transform: scale(1.2);
+}
+section.corazon_container:hover > p.izquierda {
+    transform: scale(1.2);
+}
+section.corazon_container:hover > p.pico {
+    transform: scale(1.2) rotate(45deg);
+}
+
+.netflix_container{
+    width: 500px;
+    height: 300px;
+    border: 1px solid #222;
+    background-color: #222;
+}
+.netflix{
+    background-color: #b1060f;
+    width: 60px;
+    height: 250px;
+    position: relative;
+}
+.netflix::before{
+    background-color: #b1060f;
+    width: 60px;
+    height: 250px;
+    content: "";
+    position: absolute;
+    left: 90px;
+}
+.netflix::after{
+    background-color: #222;
+    width: 175px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: -10px;
+    border-radius: 50%;
+}
+.netflix span{
+    width: 60px;
+    height: 250px;
+    background-color: #e50913;
+    position: absolute;
+    left: 46px;
+    transform: skew(20deg);
+    box-shadow: 0 0 10px -4px #222;
+}
+
+.instagram{
+    width: 320px;
+    height: 320px;
+    /*background:linear-gradient(red , blue) ;*/
+    background: radial-gradient(
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b37b7 85%,
+        #515ecf
+    );
+    border-radius: 30%;
+    position: relative;
+}
+.instagram::before{
+    content: "";
+    width: 200px;
+    height: 200px;
+    border: 16px solid #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 30%;
+}
+.instagram::after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 16px solid #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+.instagram span{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 16px solid #fff;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    margin: auto;
+    border-radius: 50%;
+}
